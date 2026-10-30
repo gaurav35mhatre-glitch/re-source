@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🚀 Start Full Stack App (Client + Server)",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Start Frontend Only (Port 3000)",
+      "type": "shell",
+      "command": "cd client && npm run dev",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Backend Server Only (Port 5000)",
+      "type": "shell",
+      "command": "cd server && npm run dev",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Install All Dependencies (Root + Client + Server)",
+      "type": "shell",
+      "command": "npm run install:all",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Backend: Node Express Server (Port 5000)",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/server/index.js",
+      "cwd": "${workspaceFolder}/server",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Frontend: Open re'source Web App (Chrome)",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/client/src"
+    },
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Frontend: Open re'source Web App (Edge)",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/client/src"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "🚀 Full Stack: Run Both Server & Web App",
+      "configurations": ["Backend: Node Express Server (Port 5000)", "Frontend: Open re'source Web App (Chrome)"],
+      "stopAll": true
+    }
+  ]
+}

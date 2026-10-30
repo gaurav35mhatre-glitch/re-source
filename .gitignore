@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+
+# Production build outputs
+dist/
+build/
+client/dist/
+
+# Local Environment Variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary / Large Archives
+re_source_source_code.zip
+re_source_vscode_project.zip
+re_source_full_code.zip
+*.zip
+*.tar.gz
